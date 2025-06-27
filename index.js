@@ -21,4 +21,5 @@ app.post('/detect', (req, res) => {
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Fake account detector is running on port ${PORT}`);
-});
+  });
+
