@@ -1,25 +1,20 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const cors = require('cors');
+const express = require("express");
+const cors = require("cors");
+const bodyParser = require("body-parser");
 
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-app.post('/detect', (req, res) => {
-  const { username, followers, following, bio, profilePic } = req.body;
-  let score = 0;
 
-  if (!bio) score += 1;
-  if (!profilePic) score += 1;
-  if (followers / (following || 1) < 0.2) score += 1;
-
-  const isFake = score >= 2;
-  res.json({ fake: isFake, score });
+app.post("/detect", (req, res) => {
+  const { username, bio } = req.body;
+  const isFake = username.toLowerCase().includes("bot") || (bio && bio.length < 10);
+  res.json({ isFake });
 });
+
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`Fake account detector is running on port ${PORT}`);
-  });
-
+  console.log(`Backend running on port ${PORT}`);
+});
