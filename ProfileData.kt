@@ -1,4 +1,4 @@
-package com.example.fakeaccountdetector
+package com.example.fakeaccountdetector.data
 
 data class ProfileData(
     val username: String,
