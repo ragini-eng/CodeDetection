@@ -1,20 +1,28 @@
-const express = require("express");
-const cors = require("cors");
-const bodyParser = require("body-parser");
-
+const express = require('express');
 const app = express();
-app.use(cors());
-app.use(bodyParser.json());
 
+// middleware
+app.use(express.json());
 
-app.post("/detect", (req, res) => {
-  const { username, bio } = req.body;
-  const isFake = username.toLowerCase().includes("bot") || (bio && bio.length < 10);
-  res.json({ isFake });
+// test endpoint
+app.get('/', (req, res) => {
+  res.send('Backend is alive');
 });
 
+// real endpoint
+app.post('/detect', (req, res) => {
+  const profile = req.body;
+  // dummy logic for now
+  const result = {
+    score: 42,
+    result: 'Likely Fake'
+  };
+  res.json(result);
+});
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Backend running on port ${PORT}`);
+const PORT = 3000;
+
+// Make sure it's binding to 0.0.0.0
+app.listen(3000, '0.0.0.0', () => {
+  console.log("Server running on port 3000");
 });
