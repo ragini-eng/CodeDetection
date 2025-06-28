@@ -1,0 +1,29 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Calendar Base -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M3,4h18a1,1 0 0 1 1,1v16a1,1 0 0 1 -1,1H3a1,1 0 0 1 -1,-1V5a1,1 0 0 1 1,-1z" />
+
+    <!-- Calendar top bar -->
+    <path
+        android:fillColor="#1976D2"
+        android:pathData="M2,4h20v4H2z" />
+
+    <!-- Clock Circle -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M15,15a4,4 0 1,0 0.1,0z" />
+
+    <!-- Clock Hands -->
+    <path
+        android:strokeColor="#1976D2"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M15,15v-2M15,15h2" />
+</vector>

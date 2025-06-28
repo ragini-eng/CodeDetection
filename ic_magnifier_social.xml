@@ -1,0 +1,39 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Blue Circle -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M50,10a40,40 0 1,0 0.1,0z" />
+
+    <!-- White Inner Circle -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,20a30,30 0 1,0 0.1,0z" />
+
+    <!-- Magnifier handle -->
+    <path
+        android:fillColor="#1976D2"
+        android:pathData="M70,70 L90,90"
+        android:strokeWidth="8"
+        android:strokeColor="#1976D2"
+        android:strokeLineCap="round" />
+
+    <!-- Twitter dot (left-top) -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M40,35a4,4 0 1,1 0.1,0z" />
+
+    <!-- Facebook dot (center-top) -->
+    <path
+        android:fillColor="#1976D2"
+        android:pathData="M50,30a4,4 0 1,1 0.1,0z" />
+
+    <!-- Instagram dot (right-top) -->
+    <path
+        android:fillColor="#42A5F5"
+        android:pathData="M60,35a4,4 0 1,1 0.1,0z" />
+</vector>

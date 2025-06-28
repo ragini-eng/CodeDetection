@@ -1,0 +1,16 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Shield -->
+    <path
+        android:fillColor="#0D47A1"
+        android:pathData="M12,2L4,5v6c0,5.55 3.84,10.74 8,12 4.16,-1.26 8,-6.45 8,-12V5l-8,-3z" />
+
+    <!-- Magnifying Glass -->
+    <path
+        android:fillColor="#42A5F5"
+        android:pathData="M15.5,11c0,1.93 -1.57,3.5 -3.5,3.5S8.5,12.93 8.5,11 10.07,7.5 12,7.5 15.5,9.07 15.5,11zm4.31,6.9l-3.13,-3.13c0.41,-0.71 0.65,-1.53 0.65,-2.37 0,-2.76 -2.24,-5 -5,-5s-5,2.24 -5,5 2.24,5 5,5c0.84,0 1.66,-0.23 2.37,-0.65l3.13,3.13c0.39,0.39 1.02,0.39 1.41,0l0.57,-0.57c0.4,-0.39 0.4,-1.03 0.01,-1.41z" />
+</vector>
