@@ -1,0 +1,65 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+
+        tools:targetApi="31">
+
+        <!-- Only ONE MainActivity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.FakeAccountDetectector">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Sign Up Screen -->
+        <activity android:name=".SignUpActivity" />
+
+        <!-- Login Screen -->
+        <activity android:name=".LoginActivity" />
+
+        <!-- Home Screen -->
+        <activity android:name=".HomeActivity" />
+
+        <!-- Detect Account Screen -->
+        <activity android:name=".DetectPlatformActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PlatformLoginActivity"
+            android:exported="true" />
+
+        <activity android:name=".ResultActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".CommunityFeedbackActivity"
+            android:label="Feedback from Users" />
+
+        <activity android:name=".LearnActivity"
+            android:exported="true" />
+
+        <activity android:name=".ProfileActivity"
+            android:exported="true" />
+
+        <activity android:name=".HelpActivity"
+            android:exported="true" />
+
+
+
+    </application>
+</manifest>
