@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAF6FF"
+    android:padding="16dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Magnifying Glass Icon -->
+        <ImageView
+            android:id="@+id/imageTop"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_magnifier_social"
+            android:layout_marginTop="32dp"
+            android:contentDescription="Detect Icons" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Learn to Identify\nFake Accounts"
+            android:textAlignment="center"
+            android:textColor="#144D79"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_medium" />
+
+        <!-- 2x2 Grid of Tips -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginBottom="16dp">
+
+                <!-- Card 1 -->
+                <LinearLayout
+                    android:id="@+id/sectionFollowers"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/card_rounded_bg"
+                    android:layout_marginEnd="8dp">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/ic_check_followers"
+                        android:tint="#2196F3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Check\nFollowers"
+                        android:textAlignment="center"
+                        android:textColor="#144D79"
+                        android:textSize="14sp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/poppins_medium" />
+                </LinearLayout>
+
+                <!-- Card 2 -->
+                <LinearLayout
+                    android:id="@+id/sectionBio"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/card_rounded_bg"
+                    android:layout_marginStart="8dp">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/ic_verify_bio"
+                        android:tint="#2196F3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Verify\nBio"
+                        android:textAlignment="center"
+                        android:textColor="#144D79"
+                        android:textSize="14sp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/poppins_medium" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <!-- Card 3 -->
+                <LinearLayout
+                    android:id="@+id/sectionActivity"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/card_rounded_bg"
+                    android:layout_marginEnd="8dp">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/ic_activity_history"
+                        android:tint="#2196F3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Check Activity\nHistory"
+                        android:textAlignment="center"
+                        android:textColor="#144D79"
+                        android:textSize="14sp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/poppins_medium" />
+                </LinearLayout>
+
+                <!-- Card 4 -->
+                <LinearLayout
+                    android:id="@+id/sectionProfile"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/card_rounded_bg"
+                    android:layout_marginStart="8dp">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/ic_profile_picture"
+                        android:tint="#2196F3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Profile Picture\nQuality"
+                        android:textAlignment="center"
+                        android:textColor="#144D79"
+                        android:textSize="14sp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/poppins_medium" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Progress Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Learning progress"
+            android:textColor="#777777"
+            android:textSize="14sp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/poppins_medium" />
+
+        <!-- ProgressBar -->
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_marginTop="8dp"
+            android:progress="45"
+            android:max="100"
+            android:progressDrawable="@drawable/progress_rounded_blue"
+            style="?android:attr/progressBarStyleHorizontal" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:padding="24dp"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Welcome Text -->
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome To Detector App"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/poppins_medium" />
+
+        <!-- Detect Fake Account Button -->
+        <LinearLayout
+            android:id="@+id/btnDetectFake"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/welcomeText"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/button_white_rounded"
+            android:padding="12dp"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_detect" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detect Fake Account"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/poppins_medium" />
+        </LinearLayout>
+
+        <!-- My Reports Button -->
+        <LinearLayout
+            android:id="@+id/btnReport"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/btnDetectFake"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:background="@drawable/button_white_rounded"
+            android:padding="12dp"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_report" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Report"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/poppins_medium" />
+        </LinearLayout>
+
+        <!-- Community Feedback Button -->
+        <Button
+            android:id="@+id/btnCommunityFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnReport"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#1E88E5"
+            android:text="📢 Community Feedback"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_baseline_feedback_24"
+            android:padding="12dp" />
+
+        <!-- Learn to Identify Fakes -->
+        <LinearLayout
+            android:id="@+id/btnLearn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/btnCommunityFeedback"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:background="@drawable/button_white_rounded"
+            android:padding="12dp"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_learn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Learn to Identify Fakes"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/poppins_medium" />
+        </LinearLayout>
+
+        <!-- Profile Button -->
+        <LinearLayout
+            android:id="@+id/btnProfile"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/btnLearn"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:background="@drawable/button_white_rounded"
+            android:padding="12dp"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_profile" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/poppins_medium" />
+        </LinearLayout>
+
+        <!-- Help/About Button -->
+        <LinearLayout
+            android:id="@+id/btnHelpAbout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/btnProfile"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:background="@drawable/button_white_rounded"
+            android:padding="12dp"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_help" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Help/About"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/poppins_medium" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

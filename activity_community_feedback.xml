@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3E5FC"
+    android:padding="24dp">
+
+
+    <!-- 🌐 Community Feedback Block -->
+    <LinearLayout
+        android:id="@+id/communityFeedbackBlock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_glass_card"
+        android:padding="20dp"
+        android:layout_marginTop="24dp"
+        android:elevation="6dp"
+        android:layout_marginBottom="32dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvCommunityTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔎 COMMUNITY FEEDBACK"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#0D47A1"
+            android:letterSpacing="0.02"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Average Community Result -->
+        <TextView
+            android:id="@+id/tvCommunityResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="72% users said: Looks Fake"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1E88E5"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Voting Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnLike"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="👍 Looks Real"
+                android:textColor="#2E7D32"
+                android:backgroundTint="#E8F5E9"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp"
+                android:elevation="2dp" />
+
+            <Button
+                android:id="@+id/btnDislike"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="👎 Looks Fake"
+                android:textColor="#C62828"
+                android:backgroundTint="#FFEBEE"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"
+                android:elevation="2dp" />
+        </LinearLayout>
+
+        <!-- Feedback Count & Note -->
+        <TextView
+            android:id="@+id/tvVotesCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="198 users voted"
+            android:textSize="14sp"
+            android:textColor="#607D8B"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/tvFeedbackNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your vote helps improve AI accuracy!"
+            android:textSize="13sp"
+            android:textColor="#757575"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+</ScrollView>

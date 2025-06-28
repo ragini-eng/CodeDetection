@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splashLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_gradient">
+
+    <!-- FULL SCREEN IMAGE -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/app_logo"
+        android:scaleType="centerCrop" /> <!-- or fitCenter -->
+
+
+
+    <!-- Optional Dots at Bottom -->
+    <LinearLayout
+        android:id="@+id/indicatorDots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp">
+        <!-- Add dots here if needed -->
+    </LinearLayout>
+
+</RelativeLayout>
