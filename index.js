@@ -20,8 +20,6 @@ app.post('/detect', (req, res) => {
   res.json(result);
 });
 
-const PORT = 3000;
-
 // Make sure it's binding to 0.0.0.0
 app.listen(3000, '0.0.0.0', () => {
   console.log("Server running on port 3000");
